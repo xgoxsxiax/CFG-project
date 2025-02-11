@@ -25,7 +25,7 @@ Zarządzanie wypożyczeniami:
 Analiza danych: 
 - Wyszukiwanie książek wypożyczonych co najmniej 3 razy  
 - Sprawdzanie użytkowników, którzy nie zwrócili książek  
-- Widok `BorrowingDetails` łączący dane o użytkownikach, książkach i autorach  
+- Widok BorrowingDetails łączący dane o użytkownikach, książkach i autorach  
 
 Obsługa kar: 
 - Znalezienie książek z nałożonymi karami  
@@ -33,6 +33,6 @@ Obsługa kar:
 - Automatyczne czyszczenie kar starszych niż 1 rok (event `ClearOldPenalties`)  
 
 Funkcje i procedury:
-- `GetBookCountForUser(user_id)` – zwraca liczbę książek wypożyczonych przez danego użytkownika  
-- `AddBorrowing(userId, bookId, borrowDate)` – procedura dodająca wypożyczenie  
-- Trigger `AfterReturnBook` – automatycznie zwiększa dostępność książki po jej zwrocie  
+- GetBookCountForUser(user_id) – zwraca liczbę książek wypożyczonych przez danego użytkownika  
+- AddBorrowing(userId, bookId, borrowDate) – procedura dodająca wypożyczenie  
+- Trigger AfterReturnBook – automatycznie zwiększa dostępność książki po jej zwrocie  
